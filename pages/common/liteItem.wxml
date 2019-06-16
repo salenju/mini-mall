@@ -1,0 +1,7 @@
+<import src='../common/propmpt.wxml' />
+
+  <template name='listItem'>
+    <template is='propmpt' data='{{propmpt}}' />
+
+    
+  </template>
