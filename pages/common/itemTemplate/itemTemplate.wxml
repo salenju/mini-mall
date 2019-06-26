@@ -1,0 +1,11 @@
+<template name='itemTemplate'>
+  <view class='product-item'>
+    <view class='pt-img'>
+      <image src='{{url}}'></image>
+    </view>
+    <view class='pt-info'>
+      <text class='pt-name'>{{name}}</text>
+      <text class='pt-price'>￥{{price}} </text>
+    </view>
+  </view>
+</template>

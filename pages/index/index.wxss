@@ -1,21 +1,12 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@import '../common/itemTemplate/itemTemplate.wxss';
+
+.hc-swiper {
+  width: 100%;
+  margin: 10rpx 0;
+  text-align: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
+.hc-swiper image {
+  width: 100%;
 }
