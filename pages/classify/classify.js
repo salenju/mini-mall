@@ -6,8 +6,35 @@ Page({
    */
   data: {
     categoryList: [{
-      id: ''
-    }],
+        id: '249794988324487171',
+        name: '热销爆品'
+      },
+      {
+        id: '249794988324487172',
+        name: '会员特价'
+      },
+      {
+        id: '249794988324487173',
+        name: '时令水果'
+      },
+      {
+        id: '249794988324487174',
+        name: '肉禽蛋类'
+      },
+      {
+        id: '249794988324487175',
+        name: '海鲜水产'
+      },
+      {
+        id: '249794988324487176',
+        name: '烘焙糕点'
+      },
+      {
+        id: '249794988324487177',
+        name: '休闲零食'
+      }
+    ],
+    curCate: null,
     itemList: [{
         id: '239794988324487170',
         name: '绿豆',
@@ -33,6 +60,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    if (this.data.categoryList.length !== 0){
+      this.setData({
+        curCate:this.data.categoryList[0]['id']
+      });
+    }
   },
+
+  switchCateTab: function(e) {
+    let _cateId = e.target.dataset.id;
+    this.setData({
+      curCate: _cateId
+    });
+  }
 })

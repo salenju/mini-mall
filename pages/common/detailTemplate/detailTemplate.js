@@ -26,9 +26,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    // this.setData = ({
+    // this.setData({
     //   productId: options.productId
     // })
+    // console.log('====>>>productId:', options.productId)
 
     // // 根据productId获取对应product的信息
     // let _detailInfo = {
@@ -38,7 +39,7 @@ Page({
     //   url: ['https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561541522550&di=e4fc211635adb6e867f2610ac23b26a4&imgtype=0&src=http%3A%2F%2Fwww.chinasensor.cn%2Ffile%2Fupload%2F201707%2F28%2F16054877171185.jpg', 'https://pics3.baidu.com/feed/838ba61ea8d3fd1f1ca0c3093b1ad21b95ca5f34.png?token=f2bafe7ac98932378991c973657d4d75&s=C5A6BC53C08ADFEF5A283A43030020F4'],
     //   description: '一餐五常米，浑忘酒肉香”，遥远的塞外北国，神秘的白山黑水，在此灵动的黑土地上孕育着传奇稻谷——五常大米。“稻花香”做为五常大米中的精品，拥有着一段传奇的历史。说到“稻花香”就得从一个人说起，他就是——田永太，朝鲜族，农艺师，原系黑龙江省五常市龙凤山乡农业技术推广站站长，2009年退休。他从事水稻研究工作40余年，在这漫长的时间里，历尽艰辛，苦心研究适合当地生长的水稻当家品种，每创出一个品牌，都凝聚着田永太的心血和汗水'
     // }
-    // this.setData = ({
+    // this.setData({
     //   detailInfo: _detailInfo
     // })
   },

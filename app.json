@@ -1,11 +1,16 @@
 {
   "pages": [
+    "pages/user/user",
+    "pages/user/address/address",
+    "pages/user/newAddress/newAddress",
+    "pages/user/editAddress/editAddress",
     "pages/index/index",
     "pages/logs/logs",
     "pages/classify/classify",
     "pages/cart/cart",
-    "pages/user/user",
-    "pages/common/detailTemplate/detailTemplate"
+    "pages/common/detailTemplate/detailTemplate",
+    "pages/user/order/order",
+    "pages/user/orderDetail/orderDetail"
   ],
   "window": {
     "backgroundColor": "#f7f7f7",

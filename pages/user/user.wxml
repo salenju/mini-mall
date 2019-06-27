@@ -1,2 +1,42 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+
+<view class="user-container">
+  <!-- 用户图像 -->
+  <view class="user-icon">
+    <view class="avatar">
+      <image src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <text class="nickName">{{userInfo.nickName}}</text>
+  </view>
+
+  <!-- 用户信息 -->
+  <view class="info order-info">
+    <block wx:for='{{orderInfo}}' wx:key='{{index}}'>
+      <view class="item" data-id='{{item.id}}'>
+        <view>
+          <image src='{{item.url}}'></image>
+          <text>{{item.name}}</text>
+        </view>
+        <text class='more-icon'>></text>
+      </view>
+    </block>
+  </view>
+
+  <!-- 关于我们 -->
+  <view class="info about">
+    <block wx:for='{{aboutInfo}}' wx:key='{{index}}'>
+      <view class="item" data-id='{{item.id}}'>
+        <view>
+          <image src='{{item.url}}'></image>
+          <text>{{item.name}}</text>
+        </view>
+        <text class='more-icon'>></text>
+      </view>
+    </block>
+  </view>
+
+  <!-- 退出账号 -->
+  <view class="sign-out">
+    <view class="item">退出登录</view>
+  </view>
+</view>

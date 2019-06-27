@@ -2,40 +2,19 @@
 <import src='../common/itemTemplate/itemTemplate.wxml' />
 
 <view class='classify-container'>
-  <view class='cc-category'>
-    <scroll-view class='cc-scroll-view' scroll-y>
-      <view class='scroll-view-item'>热销爆品</view>
-      <view class='scroll-view-item'>会员特价</view>
-      <view class='scroll-view-item'>时令水果</view>
-      <view class='scroll-view-item'>肉禽蛋类</view>
-      <view class='scroll-view-item'>海鲜水产</view>
-      <view class='scroll-view-item'>烘焙糕点</view>
-      <view class='scroll-view-item'>休闲零食</view>
-      <view class='scroll-view-item'>卤味熟食</view>
-      <view class='scroll-view-item'>酒水饮料</view>
-      <view class='scroll-view-item'>粮油调味</view>
-      <view class='scroll-view-item'>方便速食</view>
-      <view class='scroll-view-item'>美妆个护</view>
-      <view class='scroll-view-item'>小龙虾</view>
-      <view class='scroll-view-item'>雪糕铺</view>
-      <view class='scroll-view-item'>超市</view>
-      <view class='scroll-view-item'>肉禽蛋类</view>
-      <view class='scroll-view-item'>海鲜水产</view>
-      <view class='scroll-view-item'>烘焙糕点</view>
-      <view class='scroll-view-item'>休闲零食</view>
-      <view class='scroll-view-item'>卤味熟食</view>
-      <view class='scroll-view-item'>酒水饮料</view>
-      <view class='scroll-view-item'>粮油调味</view>
-      <view class='scroll-view-item'>方便速食</view>
-      <view class='scroll-view-item'>美妆个护</view>
-      <view class='scroll-view-item'>小龙虾</view>
-      <view class='scroll-view-item'>雪糕铺</view>
-      <view class='scroll-view-item'>超市</view>
-    </scroll-view>
+  <!-- 左侧栏 -->
+  <view class='nav-left'>
+    <block wx:for='{{categoryList}}' wx:key='{{index}}'>
+      <view class='nl-item {{curCate === item.id ? "active" : ""}}' bindtap='switchCateTab' data-id='{{item.id}}'>{{item.name}}</view>
+    </block>
   </view>
-  <view class='cc-list'>
+
+  <!-- 右侧栏 -->
+  <view class='nav-right'>
     <block wx:for='{{itemList}}' wx:key='{{index}}'>
-      <template is='itemTemplate' data='{{...item}}' />
+      <navigator url='../common/detailTemplate/detailTemplate?productId={{item.id}}' open-type='navigate'>
+        <template is='itemTemplate' data='{{...item}}' />
+      </navigator>
     </block>
   </view>
 </view>
