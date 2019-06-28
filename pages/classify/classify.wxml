@@ -12,9 +12,9 @@
   <!-- 右侧栏 -->
   <view class='nav-right'>
     <block wx:for='{{itemList}}' wx:key='{{index}}'>
-      <navigator url='../common/detailTemplate/detailTemplate?productId={{item.id}}' open-type='navigate'>
+      <view bindtap="goDetlPage" data-id='{{item.id}}'>
         <template is='itemTemplate' data='{{...item}}' />
-      </navigator>
+      </view>
     </block>
   </view>
 </view>

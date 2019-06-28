@@ -1,15 +1,20 @@
 {
   "pages": [
+    "pages/user/order/order",
     "pages/user/user",
+    "pages/index/index",
     "pages/user/address/address",
     "pages/user/newAddress/newAddress",
     "pages/user/editAddress/editAddress",
-    "pages/index/index",
+    "pages/user/help/help",
+    "pages/user/clearCache/clearCache",
+    "pages/user/aboutUs/aboutUs",
+    "pages/user/contact/contact",
+    "pages/common/detailTemplate/detailTemplate",
+    "pages/common/orderTemplate/orderTemplate",
     "pages/logs/logs",
     "pages/classify/classify",
     "pages/cart/cart",
-    "pages/common/detailTemplate/detailTemplate",
-    "pages/user/order/order",
     "pages/user/orderDetail/orderDetail"
   ],
   "window": {

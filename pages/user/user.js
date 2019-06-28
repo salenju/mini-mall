@@ -74,4 +74,19 @@ Page({
     }
   },
 
+  commonJump: function(event) {
+    let _name = event.currentTarget.dataset.name;
+    let mapData = {
+      '我的订单': './order/order',
+      '收货地址': './address/address',
+      '联系客服': './contact/contact',
+      '常见问题': './help/help',
+      '清除缓存': './clearCache/clearCache',
+      '关于我们': './aboutUs/aboutUs'
+    }
+    wx.navigateTo({
+      url: mapData[_name],
+    })
+  },
+
 })

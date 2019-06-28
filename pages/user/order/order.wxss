@@ -1,1 +1,6 @@
 /* pages/user/order/order.wxss */
+@import '../../common/orderTemplate/orderTemplate.wxss';
+
+.order-container {
+  background: #d9d9d9;
+}

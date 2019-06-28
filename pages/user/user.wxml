@@ -12,7 +12,7 @@
   <!-- 用户信息 -->
   <view class="info order-info">
     <block wx:for='{{orderInfo}}' wx:key='{{index}}'>
-      <view class="item" data-id='{{item.id}}'>
+      <view class="item" data-id='{{item.id}}' data-name='{{item.name}}' bindtap="commonJump">
         <view>
           <image src='{{item.url}}'></image>
           <text>{{item.name}}</text>
@@ -25,7 +25,7 @@
   <!-- 关于我们 -->
   <view class="info about">
     <block wx:for='{{aboutInfo}}' wx:key='{{index}}'>
-      <view class="item" data-id='{{item.id}}'>
+      <view class="item" data-id='{{item.id}}' data-name='{{item.name}}' bindtap="commonJump">
         <view>
           <image src='{{item.url}}'></image>
           <text>{{item.name}}</text>

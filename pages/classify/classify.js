@@ -60,9 +60,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    if (this.data.categoryList.length !== 0){
+    if (this.data.categoryList.length !== 0) {
       this.setData({
-        curCate:this.data.categoryList[0]['id']
+        curCate: this.data.categoryList[0]['id']
       });
     }
   },
@@ -72,5 +72,14 @@ Page({
     this.setData({
       curCate: _cateId
     });
+  },
+
+  goDetlPage: function(event) {
+    // 获取productId
+    let productId = event.currentTarget.dataset.id
+    // 携带productId跳转到product detail page
+    wx.navigateTo({
+      url: `../common/detailTemplate/detailTemplate?productId=${productId}`
+    })
   }
 })

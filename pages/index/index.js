@@ -39,7 +39,7 @@ Page({
 
   },
 
-  goDetlTab: function(event) {
+  goDetlPage: function(event) {
     // 获取productId
     let productId = event.currentTarget.dataset.id
     // 携带productId跳转到product detail page

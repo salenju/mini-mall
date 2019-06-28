@@ -1,0 +1,55 @@
+/* pages/common/orderTemplate/orderTemplate.wxss */
+
+.order-template {
+  border: 2rpx solid #f5f5f5;
+  margin: 20rpx 0 0;
+  /* height: 400rpx; */
+  width: 100%;
+  background: #fff;
+}
+
+.order-template .ot-container {
+  margin: 0 30rpx;
+}
+
+/* 公共样式 */
+.ot-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #919191;
+  width: 100%;
+}
+
+.ot-row .ot-num {
+  color: #222;
+}
+
+/* 订单总价 */
+
+.ot-total .ot-row{
+  height: 100rpx;
+  font-size: 40rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+}
+
+/* 订单中商品列表 */
+
+.ot-list {
+  border-bottom: 2rpx solid #f5f5f5;
+}
+
+.ot-list .ot-row {
+  height: 80rpx;
+  font-size: 32rpx;
+}
+
+/* 功能按钮 */
+
+.ot-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100rpx;
+  width:100%;
+}
