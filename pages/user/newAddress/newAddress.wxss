@@ -1,1 +1,104 @@
 /* pages/user/newAddress/newAddress.wxss */
+
+.new-address-container {
+  background: #e9e9e9;
+  min-height: 1200rpx;
+  padding: 20rpx 0 0;
+}
+
+.new-address-container .nac-info {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 0 20rpx;
+  font-size: 32rpx;
+  line-height: 1.5;
+}
+
+.new-address-container .nac-info .label-name {
+  width: 200rpx;
+}
+
+.new-address-container .nac-info>view {
+  padding: 20rpx 0;
+  border-top: 2rpx solid #e9e9e9;
+}
+
+/* 收货人-style Start */
+
+.nac-info  .ni-contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.nac-info  .ni-contact-info>view {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 0;
+}
+
+.nac-info  .ni-contact-info .bt {
+  width:100%;
+  border-top: 2rpx solid #e9e9e9;
+}
+
+/* 收货人-style End */
+
+.nac-info .ni-address,
+.nac-info .ni-detail-address{
+  display: flex;
+  align-items: center;
+}
+
+
+/* 标签-style Start */
+
+.nac-info  .ni-label {
+  display: flex;
+  align-items: center;
+}
+
+/* 标签-style End */
+
+/* 设置默认地址开关-style Start */
+
+.nac-info .ni-default {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nac-info .ni-default .nd-default {
+  display: flex;
+  flex-direction: column;
+}
+
+.nac-info .ni-default .nd-default .nd-hint {
+  font-size: 28rpx;
+  color: #bfbfbf;
+}
+
+.nac-info .ni-default .nd-switch {
+  padding: 0 0 0 40rpx;
+}
+
+/* 设置默认地址开关-style End */
+
+/* 保存按钮-style Start */
+
+.nac-save, .nac-save text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nac-save {
+  margin: 40rpx;
+  padding: 20rpx 0;
+  background: #479de6;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 8rpx;
+}
+
+/* 保存按钮-style End */

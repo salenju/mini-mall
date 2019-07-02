@@ -1,2 +1,27 @@
 <!--pages/user/address/address.wxml-->
-<text>pages/user/address/address.wxml</text>
+
+<view class="address-container">
+
+  <!-- 收获地址 -->
+  <view class="ac-address-list">
+    <block wx:for='{{addressList}}' wx:key='{{index}}'>
+      <view class='ac-address-item'>
+        <view class="addr-info">
+          <text class="ai-addr">{{item.address}}</text>
+          <text class="ai-label {{item.label}}">{{item.labelName}}</text>
+          <text wx:if='{{item.defaultAddress === true}}' class='ai-label ai-default'>默认</text>
+        </view>
+        <view class="contact-info">
+          <text>{{item.contactName}}</text>
+          <text wx:if='{{item.sex === "male"}}' class="ci-sex">先生</text>
+          <text wx:else='{{item.sex === "female"}}' class="ci-sex">女士</text>
+          <text>{{item.contactNumber}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class='ac-add' bindtap="addAddress">
+    <text>新增收获地址</text>
+  </view>
+</view>

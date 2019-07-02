@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#479de6",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "我的收获地址",
+  "backgroundColor": "#f7f7f7"
 }

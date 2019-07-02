@@ -1,1 +1,104 @@
 /* pages/user/address/address.wxss */
+
+.address-container {
+  background: #e9e9e9;
+  min-height: 1200rpx;
+  padding: 20rpx 0 0;
+}
+
+/* 收获地址-style Start */
+
+.address-container  .ac-address-list {
+  padding: 0 20rpx;
+  line-height: 1.5;
+  background: #fff;
+}
+
+.address-container .ac-address-item {
+  padding: 20rpx 0;
+  border-top: 2rpx solid #e9e9e9;
+}
+
+.address-container .ac-address-item:first-child {
+  border: none;
+}
+
+.ac-address-item .addr-info {
+  font-size: 32rpx;
+}
+
+.ac-address-item .addr-info .ai-label {
+  font-size: 24rpx;
+  margin: 0 10rpx;
+  padding: 0 10rpx;
+  border-radius: 6rpx;
+}
+
+.ai-label.home {
+  color: #108ee9;
+  border: 2rpx solid #108ee9;
+  background: transparent;
+}
+
+.ai-label.company {
+  color: #f5317f;
+  border: 2rpx solid #f5317f;
+  background: transparent;
+}
+
+.ai-label.school {
+  color: #00a854;
+  border: 2rpx solid #00a854;
+  background: transparent;
+}
+
+.ai-label.parents {
+  color: #ffbf00;
+  border: 2rpx solid #ffbf00;
+  background: transparent;
+}
+
+.ac-address-item .addr-info .ai-default {
+  color: #fff;
+  border: 2rpx solid #f5317f;
+  background: #f5317f;
+}
+
+.ac-address-item .contact-info {
+  font-size: 28rpx;
+  color: #bfbfbf;
+}
+
+.ac-address-item .contact-info .ci-sex {
+  padding: 0 10rpx;
+}
+
+/* 收获地址-style End */
+
+/* 新增收获地址按钮-style Start */
+
+.ac-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 20rpx;
+  width: 100%;
+  height: 80rpx;
+}
+
+.ac-add text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  background: #479de6;
+  border: 2rpx solid #479de6;
+  border-radius: 10rpx;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+/* 新增收获地址按钮-style End */

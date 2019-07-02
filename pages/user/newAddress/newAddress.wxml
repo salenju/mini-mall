@@ -1,2 +1,50 @@
 <!--pages/user/newAddress/newAddress.wxml-->
-<text>pages/user/newAddress/newAddress.wxml</text>
+
+<view class="new-address-container">
+  <view class="nac-info">
+    <view class="ni-contact-info">
+      <view>
+        <text class="label-name">收货人</text>
+        <input placeholder="请填写收货人地址"></input>
+      </view>
+      <view>
+        <text class="label-name"></text>
+        <radio-group class="radio-group bt" bindchange="radioChange">
+          <label class="radio" wx:for="{{sexItems}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" color="#479de6" />{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+      <view>
+        <text class="label-name">手机号</text>
+        <input class='bt' placeholder="请填写收货人手机号"></input>
+      </view>
+    </view>
+    <view class="ni-address">
+      <text class="label-name">收货地址</text>
+      <input placeholder="请填写收货地址"></input>
+    </view>
+    <view class="ni-detail-address">
+      <text class="label-name">门牌号</text>
+      <input placeholder="请填写门牌号"></input>
+    </view>
+    <view class="ni-label">
+      <text class="label-name">标签</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}" color="#479de6" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <view class="ni-default">
+      <view class="nd-default">
+        <text>设置默认地址</text>
+        <text class='nd-hint'>每次购物时会优先定位至该地址，方便您购物</text>
+      </view>
+      <switch class="nd-switch" bindchange='switchChange' />
+    </view>
+  </view>
+  <view class="nac-save">
+    <text>保存并使用</text>
+  </view>
+</view>
