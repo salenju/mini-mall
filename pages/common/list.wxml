@@ -1,0 +1,9 @@
+<import src='../common/propmpt.wxml' />
+
+<template name='list'>
+  <!-- 无数据时展示内容 -->
+  <template is='propmpt' data='{{propmpt}}' />
+
+  <!-- 有数据时展示内容 -->
+
+</template>
